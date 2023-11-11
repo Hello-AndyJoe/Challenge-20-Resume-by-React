@@ -1,0 +1,389 @@
+ /*Global stylings for font famiy and colors*/
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --roperTeal: #079f6c;
+    --roperGray: #454545;
+    --justWhite: #FFFFFF;
+    --seethroughWhite: rgba(255,255,255,.5);
+}
+
+* {
+    font-family: Quicksand, Verdana, sans-serif;
+}
+
+/*Background images of the white spheres*/
+
+body, header {
+    background-color: #ecfffe;
+    background: url(./assets/images/backdrop-lite.jpg) fixed;
+    background-size: cover;
+}
+
+header {
+    width: calc(100% - 72px);
+    margin: 0 36px;
+    padding: 18px 0;
+    border-bottom: 1px solid #AFAFAF;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+/*Navigation Links to the Sections of the Web Application*/
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: var(--roperTeal);
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px;
+    border-radius: 4px;
+    transition: .5s all ease;
+}
+
+nav a:hover {
+    color: var(--roperGray);
+    background-color: var(--seethroughWhite);
+    transition: .5s all ease;
+}
+
+/*Hero image and its related containers are for my face and name that are on the top of the page*/
+
+.hero {
+    display: flex;
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.welcomeblock {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.welcomeblock h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    color: var(--roperTeal);
+    margin: 0 12px;
+    text-shadow: 1px 2px 2px #b2c5c9;
+    font-weight: 300;
+    letter-spacing: 1vw;
+}
+
+.welcomeblock h1:nth-child(1) {
+    margin-right: 0;
+}
+
+.welcomeimage {
+    width: 25vw;
+    height: 25vw;
+    border-radius: 100%;
+    display: block;
+    background: var(--roperTeal);
+    position: relative;
+}
+
+.welcomeimage img {
+    width: 75%;
+    position: absolute;
+    top: -6.5%;
+    left: 12.5%;
+}
+
+/*The main content of the page*/
+
+main {
+    max-width: 1440px;
+    margin: 0 auto 48px;
+    /* background: var(--seethroughWhite);
+    padding: 36px; */
+}
+
+main h2 {
+    font-size: 44px;
+    color: var(--roperTeal);
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    padding: 0 0 24px;
+}
+
+main h4, main h5 {
+    margin: 12px 0;
+    color: var(--roperGray);
+    font-weight: 500;
+    font-size: 24px;
+}
+
+main h5 {
+    font-style: italic;
+}
+
+main p, main li {
+    font-size: 20px;
+    color: var(--roperGray);
+    line-height: 1.5;
+    text-align: justify;
+}
+
+main li {
+    margin: 0 0 16px 24px;
+    list-style: circle;
+}
+
+main img {
+    max-width: 100%;
+}
+
+section {
+    padding: 96px 0;
+}
+
+section:nth-last-child(1) {
+    padding-bottom: 0;
+}
+
+.flexcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+section aside, section article {
+    margin: 12px;
+}
+
+#thebio img {
+    border-radius: 100%;
+}
+
+#thebio #profilepic {
+    width: calc(33.333% - 24px);
+    margin: auto;
+}
+
+#thebio article {
+    width: calc(66.667% - 24px);
+}
+
+#theresume {
+    width: 100%;
+}
+
+.featured, .additional {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.additional a {
+    width: calc(33.333% - 24px);
+}
+
+#theprojects a {
+    position: relative;
+    line-height: 0;
+    margin: 12px;
+}
+
+#theprojects img {
+    border-radius: 4px;
+}
+
+.navmiddle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-radius: 4px;
+    border: 5px solid var(--justWhite);
+    background-color: rgba(255,255,255,.5);
+    transition: .5s all ease;
+}
+
+.navmiddle:hover {
+    background-color: rgba(255,255,255,.25);
+    transition: .5s all ease;
+}
+
+h6 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--roperTeal);
+    font-size: 32px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.25;
+    transition: .5s all ease;
+}
+
+.navmiddle:hover h6 {
+    color: var(--justWhite);
+    transition: .5s all ease;
+}
+
+#thecontacts a {
+    background-color: var(--roperTeal);
+    padding: 36px 24px;
+    color: var(--justWhite);
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 12px;
+    margin: 12px;
+    width: calc(25% - 24px);
+    transition: .5s all ease;
+}
+
+#thecontacts a:hover {
+    transition: .5s all ease;
+    color: var(--roperTeal);
+    background: var(--roperGray);
+}
+
+#thecontacts .flexcontainer {
+    justify-content: space-between;
+}
+
+footer {
+    background-color: var(--roperTeal);
+    color: var(--justWhite);
+    padding: 24px;
+    text-align: center;
+}
+
+/*The media query to control how to Hero content looks depending on the window's aspect ratio */
+
+@media (max-aspect-ratio: 1/1) {
+    .welcomeblock {
+       display: block;
+       width: auto;
+    }
+
+    .welcomeimage {
+        width: 45vw;
+        height: 45vw;
+        margin: auto;
+    }
+
+    .welcomeblock h1 {
+        font-size: 15vw;
+        letter-spacing: 2vw;
+        margin: 24px 0;
+        text-align: center;
+    }
+}
+
+/*Changes styling for various element to appear better in smaller resolutions*/
+
+@media screen and (max-width:1524px) {
+    header {
+        margin: 0;
+        width: 100%;
+        padding: 18px 36px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    nav a {
+        font-size: 20px;
+        padding: 8px 12px;
+    }
+
+    #thebio article, #thebio #profilepic {
+        width: calc(100% - 24px);
+    }
+
+    #thebio .profilepic {
+        max-width: 480px;
+        margin-bottom: 24px;
+    }
+
+    #thecontacts a {
+        width: calc(50% - 24px);
+    }
+}
+
+@media screen and (max-width:768px) {
+    main {
+        padding: 24px 12px;
+    }
+
+    main h2 {
+        font-size: 36px;
+    }
+
+    main h4, main h5 {
+        font-size: 18px;
+    }
+
+    main p, main li {
+        font-size: 16px;
+        line-height: 1.65;
+        text-align: unset;
+    }
+
+    h6 {
+        font-size: 24px;
+    }
+
+    #theprojects a, #thecontacts a {
+        margin: 6px
+    }
+
+    .additional a {
+        width: calc(50% - 12px);
+    }
+
+    #thecontacts a {
+        width: calc(100% - 12px);
+    }
+}
+
+@media screen and (max-width: 484px) {
+    header {
+        padding: 8px 12px;
+        top:calc(100vh - 88px);
+        border-bottom: none;
+        border-top: 1px solid #AFAFAF;
+    }
+
+    .welcomeblock {
+        position: relative;
+        bottom: 30px;
+    }
+
+    nav li {
+        width: 50%;
+    }
+
+    nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    section {
+        padding: 36px 0;
+    }
+}
