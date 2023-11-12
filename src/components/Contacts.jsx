@@ -1,14 +1,59 @@
+import { useState } from 'react';
+
 function Contacts() {
+  // Here we set two state variables for fullName and email using `useState`
+  const [fullName, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
+
+  const handleInputChange = (e) => {
+    // Getting the value and name of the input which triggered the change
+    const { name, value } = e.target;
+
+    // Ternary statement that will call either setName or setEmail based on what field the user is typing in
+    if (name === 'fullName') {
+        setName(value);
+      } else if (name === 'email') {
+        setEmail(value);
+      } else {
+        setMessage(message);
+      }
+  };
+
+  const handleFormSubmit = (e) => {
+    // Preventing the default behavior of the form submit (which is to refresh the page)
+    e.preventDefault();
+  };
+
   return (
-    <section id="thecontacts">
-      <h2>Contacts</h2>
-      <div className="flexcontainer">
-          <a href="tel:5555555555">(555) 555-5555</a>
-          <a href="mailto:andrew.joseph.roper@gmail.com">Email</a>
-          <a href="https://www.linkedin.com/in/ajroper/">Linkedin</a>
-          <a href="https://github.com/Hello-AndyJoe">GitHub</a>
-      </div>
-    </section>
+    <div className="container text-center">
+      <form className="form" onSubmit={handleFormSubmit}>
+        <input
+          value={fullName}
+          name="fullName"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Your Name"
+        />
+        <input
+          value={email}
+          name="email"
+          onChange={handleInputChange}
+          type="email"
+          placeholder="Your eMail"
+        />
+        <textarea
+          value={message}
+          name="message"
+          onChange={handleInputChange}
+          type="text"
+          placeholder="Your eMail"
+        />
+        <button type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
   );
 }
 
