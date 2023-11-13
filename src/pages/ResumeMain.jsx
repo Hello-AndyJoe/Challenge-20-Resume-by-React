@@ -3,6 +3,10 @@ function ResumeMain() {
         <section id="theresume">
             <h2>Resume</h2>
             <div className="flexcontainer">
+                <div>
+                    <a href="./assets/ticket_idea1.pdf" download>Download</a>
+                    <h3>Download a Copy</h3>
+                </div>
                 <article>
                     <h4><b>IT Administrator</b> - Courier Graphics Corporation</h4>
                     <h5>October 2017 - Current</h5>

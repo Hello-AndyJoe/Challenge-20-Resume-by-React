@@ -68,6 +68,7 @@ header .nav-link:hover {
 
 main:has(.hero) {
     max-width: 100%;
+    width: 100%;
 }
 
 .welcomeblock {
@@ -102,10 +103,10 @@ main:has(.hero) {
 }
 
 .welcomeimage img {
-    width: 85%;
+    width: 75%;
     position: absolute;
-    top: -5.25%;
-    left: 7.5%;
+    top: -6.5%;
+    left: 12.5%;
 }
 
 /*The main content of the page*/
@@ -283,14 +284,25 @@ footer {
     width: 100%; */
 }
 
-footer div {
-    margin-bottom: 12px;
+footer div:nth-child(1) {
+    margin-bottom: 18px;
 }
 
 footer a {
     color: var(--offWhite);
     text-decoration: none;
     margin: 0 18px;
+    font-weight: 500;
+}
+
+footer a img {
+    max-width: 48px;
+    transition: .25s;
+}
+
+footer a:hover img {
+    transform: scale(1.1);
+    transition: .25s;
 }
 
 /*The media query to control how to Hero content looks depending on the window's aspect ratio */

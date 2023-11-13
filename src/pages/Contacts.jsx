@@ -36,7 +36,8 @@ function Contacts() {
         <h2>Contacts</h2>
         <div className="flexcontainer">
             <form className="form" onSubmit={handleFormSubmit}>
-                <label>Your Name
+                <div>
+                  <h3>Full Name:</h3>
                     <input
                     value={fullName}
                     name="fullName"
@@ -44,8 +45,9 @@ function Contacts() {
                     type="text"
                     placeholder="Your Name"
                     />
-                </label>
-                <label>Your Email
+                </div>
+                <div>
+                  <h3>Email Address:</h3>
                     <input
                     value={email}
                     name="email"
@@ -53,16 +55,17 @@ function Contacts() {
                     type="email"
                     placeholder="Your eMail"
                     />
-                </label>
-                <label>Your Message
+                </div>
+                <div>
+                  <h3>Message:</h3>
                     <textarea
                     value={message}
                     name="message"
                     onChange={handleTextAreaChange}
                     type="text"
-                    placeholder="Your eMail"
+                    placeholder="Your Message"
                     />
-                </label>
+                </div>
                 <button type="submit">
                 Submit
                 </button>
