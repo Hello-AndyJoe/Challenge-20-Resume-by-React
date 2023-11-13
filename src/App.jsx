@@ -1,24 +1,18 @@
-import Hero from './components/Hero';
+import {Outlet} from 'react-router-dom';
 import Header from './components/Header';
-import Bio from './components/Bio';
-import ResumeMain from './components/ResumeMain';
-import Project from './components/Projects';
-import Contacts from './components/Contacts';
 import Footer from './components/Footer';
 import './styles/style.css';
 import './styles/reset.css'
 
 function App() {
   return (
+    <>
+    <Header />
     <main>
-      <Header />
-      <Hero />
-      <Bio />
-      <ResumeMain />
-      <Project />
-      <Contacts />
-      <Footer />
+      <Outlet />
     </main>
+    <Footer />
+    </>
   );
 }
 
