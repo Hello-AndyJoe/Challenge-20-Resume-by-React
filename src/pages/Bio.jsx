@@ -16,10 +16,7 @@ function Bio() {
                         feugiat sem. Fusce nec dolor et lorem finibus elementum. Morbi vel 
                         varius ligula. Proin mattis congue lacus in porttitor. Vivamus 
                         euismod blandit dui, et aliquet eros interdum ut. Proin aliquam 
-                        ultricies felis, ut sodales velit pulvinar sed. Pellentesque sed 
-                        ligula pulvinar lacus suscipit dapibus sit amet a nibh. Phasellus 
-                        nibh dui, tempus vitae orci nec, placerat lobortis nibh. In sit 
-                        amet nunc feugiat, ornare nisi eu, sollicitudin metus.
+                        ultricies felis, ut sodales velit pulvinar sed.
                     </p>
                 </article>
             </div>
