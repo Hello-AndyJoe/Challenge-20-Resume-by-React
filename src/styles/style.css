@@ -40,7 +40,7 @@ header ul {
 
 header .nav-link {
     color: var(--roperTeal);
-    font-size: 24px;
+    font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 600;
@@ -115,24 +115,26 @@ main {
     max-width: 1440px;
     width: 92.5%;
     margin: 0 auto 48px;
+    min-height: 100vh;
     /* background: var(--seethroughWhite);
     padding: 36px; */
 }
 
 main h2 {
-    font-size: 52px;
+    font-size: 72px;
     color: var(--roperTeal);
     text-transform: uppercase;
     font-weight: 500;
     text-align: center;
     padding: 0 0 24px;
+    margin-top: 98px;
 }
 
 main h4, main h5 {
     margin: 12px 0;
     color: var(--roperGray);
     font-weight: 500;
-    font-size: 28px;
+    font-size: 24px;
 }
 
 main h5 {
@@ -140,10 +142,11 @@ main h5 {
 }
 
 main p, main li {
-    font-size: 24px;
+    font-size: 18px;
     color: var(--roperGray);
     line-height: 1.5;
     text-align: justify;
+    font-weight: 500;
 }
 
 main li {
@@ -158,7 +161,7 @@ main img {
 section {
     background: var(--seethroughWhite);
     padding: 32px;
-    margin: 108px 0 0;
+    margin: 32px 0 0;
     border-radius: 6px;
 }
 
@@ -166,6 +169,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 section aside, section article {
@@ -210,6 +214,7 @@ section aside, section article {
 
 #theprojects img {
     border-radius: 4px;
+    border: 1px solid var(--roperGray);
 }
 
 .navmiddle {
@@ -221,12 +226,12 @@ section aside, section article {
     height: 90%;
     border-radius: 4px;
     border: 5px solid var(--offWhite);
-    background-color: rgba(255,255,255,.5);
+    background-color: rgba(56,56,56,.5);
     transition: .5s all ease;
 }
 
 .navmiddle:hover {
-    background-color: rgba(255,255,255,.25);
+    background-color: rgba(56,56,56,.25);
     transition: .5s all ease;
 }
 
@@ -236,18 +241,13 @@ h6 {
     top: 50%;
     transform: translate(-50%, -50%);
     color: var(--offWhite);
-    font-size: 32px !important;
+    font-size: 28px !important;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     line-height: 1.25;
     transition: .5s all ease;
 }
-/* 
-.navmiddle:hover h6 {
-    color: var(--offWhite);
-    transition: .5s all ease;
-} */
 
 #thecontacts a {
     background-color: var(--roperTeal);
@@ -270,8 +270,49 @@ h6 {
     background: var(--roperGray);
 }
 
-#thecontacts .flexcontainer {
-    justify-content: space-between;
+#thecontacts form {
+    width: 100%;
+    max-width: 520px;
+    margin: auto;
+}
+
+#thecontacts form div, #thecontacts form input, #thecontacts form textarea {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+}
+
+#thecontacts form div {
+    margin-bottom: 18px;
+}
+
+#thecontacts h3 {
+    margin: 6px;
+    text-transform: uppercase;
+}
+
+#thecontacts form input, #thecontacts form textarea {
+    padding: 6px;
+}
+
+#thecontacts form textarea {
+    min-height: 180px;
+    max-height: 420px;
+}
+
+#thecontacts div button, .faux-button {
+    margin: auto;
+    display: block;
+    text-transform: uppercase;
+    padding: 18px;
+    font-size: 20px;
+    background: var(--roperTeal);
+    color: var(--offWhite);
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .25s;
 }
 
 footer {
@@ -300,7 +341,7 @@ footer a img {
     transition: .25s;
 }
 
-footer a:hover img {
+footer a:hover img, #thecontacts div button:hover, .faux-button:hover {
     transform: scale(1.1);
     transition: .25s;
 }
@@ -377,7 +418,7 @@ footer a:hover img {
     }
 
     h6 {
-        font-size: 24px;
+        font-size: 4vw !important;
     }
 
     #theprojects a, #thecontacts a {
@@ -396,7 +437,7 @@ footer a:hover img {
 @media screen and (max-width: 484px) {
     header {
         padding: 8px 12px;
-        top:calc(100vh - 88px);
+        /* top:calc(100vh - 88px); */
         border-bottom: none;
         border-top: 1px solid #AFAFAF;
     }
@@ -418,5 +459,19 @@ footer a:hover img {
 
     section {
         padding: 36px 0;
+    }
+
+    footer  {
+        padding: 24px 12px;
+    }
+
+    footer div:nth-last-child(1) {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    footer div:nth-last-child(1) a:nth-child(1) {
+        margin-bottom: 12px;
     }
 }

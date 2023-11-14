@@ -32,8 +32,9 @@ function Contacts() {
   };
 
   return (
+    <div>
+    <h2>Contacts</h2>
     <section id="thecontacts">
-        <h2>Contacts</h2>
         <div className="flexcontainer">
             <form className="form" onSubmit={handleFormSubmit}>
                 <div>
@@ -72,6 +73,7 @@ function Contacts() {
             </form>
         </div>
     </section>
+    </div>
   );
 }
 
