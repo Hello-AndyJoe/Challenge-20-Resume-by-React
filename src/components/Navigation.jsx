@@ -31,10 +31,10 @@ function PageNavigation() {
       </li>
       <li>
         <Link
-          to="/Projects"
-          className={currentPage === '/Projects' ? 'nav-link active' : 'nav-link'}
+          to="/Portfolio"
+          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
         >
-          Projects
+          Portfolio
         </Link>
       </li>
       <li>

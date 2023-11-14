@@ -1,7 +1,8 @@
 function Bio() {
     return (
+        <div>
+        <h2>Bio</h2>
         <section id="thebio">
-            <h2>Bio</h2>
             <div className="flexcontainer">
                 <div id="profilepic">
                     <img src="./assets/images/profilepicture-2023.jpg" alt="A recent photo of me."></img>
@@ -21,6 +22,7 @@ function Bio() {
                 </article>
             </div>
         </section>
+        </div>
     );
   }
   

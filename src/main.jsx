@@ -6,7 +6,7 @@ import Error from './pages/Error';
 import Hero from './pages/Hero';
 import Bio from './pages/Bio';
 import ResumeMain from './pages/ResumeMain';
-import Projects from './pages/Projects';
+import Portfolio from './pages/Portfolio';
 import Contacts from './pages/Contacts';
 
 const router = createBrowserRouter([
@@ -28,8 +28,8 @@ const router = createBrowserRouter([
             element: <ResumeMain />,
           },
           {
-            path: '/Projects',
-            element: <Projects />,
+            path: '/Portfolio',
+            element: <Portfolio />,
           },
           {
             path: '/Contact',
