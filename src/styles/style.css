@@ -202,11 +202,11 @@ section aside, section article {
     flex-wrap: wrap;
 }
 
-.additional a {
+.additional .link-box {
     width: calc(33.333% - 24px);
 }
 
-#theprojects a {
+#theprojects .link-box {
     position: relative;
     line-height: 0;
     margin: 12px;
@@ -217,7 +217,7 @@ section aside, section article {
     border: 1px solid var(--roperGray);
 }
 
-.navmiddle {
+/* .navmiddle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -226,21 +226,21 @@ section aside, section article {
     height: 90%;
     border-radius: 4px;
     border: 5px solid var(--offWhite);
-    background-color: rgba(56,56,56,.5);
+    background-color: rgba(56,56,56,.5); 
     transition: .5s all ease;
 }
 
 .navmiddle:hover {
     background-color: rgba(56,56,56,.25);
     transition: .5s all ease;
-}
+} */
 
 h6 {
-    position: absolute;
+    /* position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: var(--offWhite);
+    color: var(--offWhite); */
     font-size: 28px !important;
     font-weight: 500;
     text-transform: uppercase;
@@ -393,7 +393,7 @@ footer a:hover img, #thecontacts div button:hover, .faux-button:hover {
         margin-bottom: 24px;
     }
 
-    #thecontacts a {
+    #thecontacts a, .additional .link-box {
         width: calc(50% - 24px);
     }
 }
@@ -401,6 +401,7 @@ footer a:hover img, #thecontacts div button:hover, .faux-button:hover {
 @media screen and (max-width:768px) {
     main {
         padding: 24px 12px;
+        width: 100%;
     }
 
     main h2 {
@@ -421,12 +422,8 @@ footer a:hover img, #thecontacts div button:hover, .faux-button:hover {
         font-size: 4vw !important;
     }
 
-    #theprojects a, #thecontacts a {
+    #thecontacts a {
         margin: 6px
-    }
-
-    .additional a {
-        width: calc(50% - 12px);
     }
 
     #thecontacts a {
@@ -439,7 +436,11 @@ footer a:hover img, #thecontacts div button:hover, .faux-button:hover {
         padding: 8px 12px;
         /* top:calc(100vh - 88px); */
         border-bottom: none;
-        border-top: 1px solid #AFAFAF;
+        border-bottom: 1px solid #AFAFAF;
+    }
+
+    header li {
+        margin-bottom: 4px;;
     }
 
     .welcomeblock {
@@ -459,6 +460,10 @@ footer a:hover img, #thecontacts div button:hover, .faux-button:hover {
 
     section {
         padding: 36px 0;
+    }
+
+    #thecontacts a, .additional .link-box {
+        width: 100%;
     }
 
     footer  {

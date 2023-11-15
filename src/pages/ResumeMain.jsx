@@ -5,7 +5,7 @@ function ResumeMain() {
         <section id="theresume">
             <div className="flexcontainer">
                 <div className="button-container">
-                    <a href="./assets/ticket_idea1.pdf" className="faux-button" download>Download Resume</a>
+                    <a href="./assets/andrew-roper_resume.pdf" className="faux-button" download>Download Resume</a>
                 </div>
                 <article>
                     <h4><b>IT Administrator</b> - Courier Graphics Corporation</h4>

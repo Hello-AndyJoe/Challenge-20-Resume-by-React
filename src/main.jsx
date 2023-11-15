@@ -17,7 +17,7 @@ const router = createBrowserRouter([
         children: [
           {
             index: true,
-            element: <Hero />,
+            element: <Bio />,
           },
           {
             path: '/Bio',
