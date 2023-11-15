@@ -23,8 +23,34 @@ function Contacts() {
       }
   };
 
+  const checkFullName = (e) => {
+    if (fullName === '') {
+      alert('Please make sure to enter your name.');
+    }
+  }
+
+  const checkEmail = (e) => {
+    const emailValidator = /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/;
+    if (emailValidator.test(email)) {
+      return;
+    } else {
+      alert('Please make sure to enter a valid email address.');
+    }
+  }
+
+  const checkMessage = (e) => {
+    if (message === '') {
+      alert('Please make sure to enter a message.');
+    }
+  }
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
+
+    alert(`From ${fullName} at ${email}:
+    
+    ${message}`
+    );
 
     setName('');
     setEmail('');
@@ -43,6 +69,7 @@ function Contacts() {
                     value={fullName}
                     name="fullName"
                     onChange={handleInputChange}
+                    onBlur={checkFullName}
                     type="text"
                     placeholder="Your Name"
                     />
@@ -53,6 +80,7 @@ function Contacts() {
                     value={email}
                     name="email"
                     onChange={handleInputChange}
+                    onBlur={checkEmail}
                     type="email"
                     placeholder="Your eMail"
                     />
@@ -63,6 +91,7 @@ function Contacts() {
                     value={message}
                     name="message"
                     onChange={handleTextAreaChange}
+                    onBlur={checkMessage}
                     type="text"
                     placeholder="Your Message"
                     />
