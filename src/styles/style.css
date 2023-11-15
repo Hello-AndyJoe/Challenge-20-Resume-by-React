@@ -115,9 +115,7 @@ main {
     max-width: 1440px;
     width: 92.5%;
     margin: 0 auto 48px;
-    min-height: 100vh;
-    /* background: var(--seethroughWhite);
-    padding: 36px; */
+    min-height: calc(100vh - 278px);
 }
 
 main h2 {
@@ -193,6 +191,10 @@ section aside, section article {
     width: 100%;
 }
 
+#theresume .button-container {
+    margin-bottom: 24px;
+}
+
 #theresume ul {
     margin-top: 24px;
 }
@@ -206,47 +208,36 @@ section aside, section article {
     width: calc(33.333% - 24px);
 }
 
-#theprojects .link-box {
+.link-box {
     position: relative;
     line-height: 0;
     margin: 12px;
-}
-
-#theprojects img {
     border-radius: 4px;
     border: 1px solid var(--roperGray);
+    display: inline-grid;
 }
 
-/* .navmiddle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 90%;
-    height: 90%;
-    border-radius: 4px;
-    border: 5px solid var(--offWhite);
-    background-color: rgba(56,56,56,.5); 
-    transition: .5s all ease;
+.navmiddle .faux-button {
+    max-width: 96px;
+    text-align: center;
+    margin: 0 6px;
 }
 
-.navmiddle:hover {
-    background-color: rgba(56,56,56,.25);
-    transition: .5s all ease;
-} */
+.navmiddle div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 0;
+}
 
 h6 {
-    /* position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--offWhite); */
     font-size: 28px !important;
     font-weight: 500;
     text-transform: uppercase;
     text-align: center;
     line-height: 1.25;
     transition: .5s all ease;
+    margin: 6px;
 }
 
 #thecontacts a {
@@ -320,9 +311,6 @@ footer {
     color: var(--offWhite);
     padding: 24px;
     text-align: center;
-    /* position: fixed;
-    bottom: 0;
-    width: 100%; */
 }
 
 footer div:nth-child(1) {
@@ -419,7 +407,7 @@ footer a:hover img, #thecontacts div button:hover, .faux-button:hover {
     }
 
     h6 {
-        font-size: 4vw !important;
+        font-size: 7.5vw !important;
     }
 
     #thecontacts a {

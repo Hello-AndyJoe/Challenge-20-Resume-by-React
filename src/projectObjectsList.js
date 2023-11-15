@@ -15,7 +15,7 @@ export const projectObjects = [
         img: "./assets/images/work_day_scheduler.png",
         live: "https://hello-andyjoe.github.io/Challenge-5/",
         repo: "https://github.com/Hello-AndyJoe/Challenge-5",
-        label: "Work Day Scheduler"
+        label: "Note Taker"
     },
     {
         img: "./assets/images/weather_forecast.png",
@@ -27,7 +27,7 @@ export const projectObjects = [
         img: "./assets/images/note_taker.png",
         live: "https://whispering-caverns-56723-7d7ad3a0ebb7.herokuapp.com/",
         repo: "https://github.com/Hello-AndyJoe/Challenge-6-Weather-Forecast",
-        label: "Weather Forecast"
+        label: "Work Day Scheduler"
     },
     {
         img: "./assets/images/movie_ticketing_site.png",
