@@ -7,14 +7,6 @@ function PageNavigation() {
     <ul>
       <li>
         <Link
-          to="/"
-          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
-        >
-          Home
-        </Link>
-      </li>
-      <li>
-        <Link
           to="/Bio"
           className={currentPage === '/Bio' ? 'nav-link active' : 'nav-link'}
         >
