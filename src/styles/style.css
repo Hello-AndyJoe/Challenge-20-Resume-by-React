@@ -133,7 +133,7 @@ main {
     max-width: 1440px;
     width: 92.5%;
     margin: 0 auto 48px;
-    min-height: calc(100vh - 278px);
+    min-height: calc(100vh - 312px);
 }
 
 main h2 {
