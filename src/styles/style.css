@@ -16,7 +16,7 @@
 
 body, header {
     background-color: var(--offWhite);
-    background: url(./assets/images/backdrop-lite.jpg) fixed;
+    background: url(/assets/images/backdrop-lite.jpg) fixed;
     background-size: cover;
 }
 

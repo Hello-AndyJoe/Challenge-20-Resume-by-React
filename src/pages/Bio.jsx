@@ -5,7 +5,7 @@ function Bio() {
         <section id="thebio">
             <div className="flexcontainer">
                 <div id="profilepic">
-                    <img src="../assets/images/profilepicture-2023.jpg" alt="A recent photo of me."></img>
+                    <img src="/assets/images/profilepicture-2023.jpg" alt="A recent photo of me."></img>
                 </div>
                 <article>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
